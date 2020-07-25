@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/x_small_margin"
+    app:cardBackgroundColor="@color/orange_b">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/cast_img"
+        android:layout_width="168dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/no_preview"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/cast_char_name"
+        app:layout_constraintStart_toStartOf="@+id/cast_char_name"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/cast_char_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/fredoka_one"
+        android:padding="@dimen/small_padding"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_txt_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cast_img"/>
+
+    <TextView
+        android:id="@+id/cast_actor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fredoka_one"
+        android:padding="@dimen/small_padding"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_txt_size"
+        android:textAlignment="center"
+        android:background="@drawable/ripple_effect"
+        app:layout_constraintEnd_toEndOf="@+id/cast_char_name"
+        app:layout_constraintStart_toStartOf="@+id/cast_char_name"
+        app:layout_constraintTop_toBottomOf="@+id/cast_char_name"/>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/single_section_container"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:background="@color/orange_a">
+
+  <com.example.abreak.movie.custom.ThickTextView
+      android:id="@+id/mov_section_name"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_marginStart="@dimen/x_small_margin"
+      android:layout_marginTop="@dimen/x_small_margin"
+      android:padding="@dimen/medium_padding"
+      android:textColor="@color/black"
+      android:textSize="@dimen/large_txt_size"
+      app:fontFamily="@font/fredoka_one"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <ImageView
+      android:id="@+id/mov_next"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:background="@drawable/ripple_effect"
+      android:src="@drawable/next"
+      android:contentDescription="@null"
+      app:layout_constraintBottom_toBottomOf="@+id/mov_section_name"
+      app:layout_constraintEnd_toStartOf="@+id/mov_menu_img"
+      app:layout_constraintTop_toTopOf="@+id/mov_section_name"/>
+
+  <ImageView
+      android:id="@+id/mov_prev"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="@dimen/small_margin"
+      android:background="@drawable/ripple_effect"
+      android:src="@drawable/previous"
+      android:contentDescription="@null"
+      app:layout_constraintBottom_toBottomOf="@+id/mov_section_name"
+      app:layout_constraintEnd_toStartOf="@+id/current_total_tv"
+      app:layout_constraintTop_toTopOf="@+id/mov_section_name"/>
+
+  <TextView
+      android:id="@+id/current_total_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:fontFamily="@font/fredoka_one"
+      android:padding="@dimen/small_padding"
+      android:textColor="@color/white"
+      android:textSize="@dimen/medium_txt_size"
+      app:layout_constraintBottom_toBottomOf="@+id/mov_section_name"
+      app:layout_constraintEnd_toStartOf="@+id/mov_next"
+      app:layout_constraintTop_toTopOf="@+id/mov_section_name"/>
+
+  <ImageView
+      android:id="@+id/mov_menu_img"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:background="@drawable/ripple_effect"
+      android:contentDescription="@null"
+      android:src="@drawable/see_icon"
+      app:layout_constraintBottom_toBottomOf="@+id/mov_section_name"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/mov_section_name"/>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/movie_list"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/x_small_margin"
+      android:layout_marginTop="@dimen/x_small_margin"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/mov_section_name"/>
+
+  <TextView
+      android:id="@+id/section_no_data"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/fredoka_one"
+      android:padding="@dimen/large_padding"
+      android:text="@string/no_data"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textSize="@dimen/large_txt_size"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/mov_section_name"/>
+
+  <TextView
+      android:id="@+id/count_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/count_background"
+      android:fontFamily="@font/fredoka_one"
+      android:paddingBottom="@dimen/small_padding"
+      android:paddingEnd="@dimen/medium_padding"
+      android:paddingStart="@dimen/medium_padding"
+      android:paddingTop="@dimen/small_padding"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textSize="@dimen/small_txt_size"
+      app:layout_constraintBottom_toBottomOf="@+id/mov_section_name"
+      app:layout_constraintStart_toEndOf="@+id/mov_section_name"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

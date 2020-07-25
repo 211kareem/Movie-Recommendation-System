@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--- Different Text Sizes !-->
+  <dimen name="x_small_txt_size">12sp</dimen>
+  <dimen name="small_txt_size">14sp</dimen>
+  <dimen name="medium_txt_size">18sp</dimen>
+  <dimen name="large_txt_size">22sp</dimen>
+
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+  <dimen name="detail_backdrop_height">16dp</dimen>
+  <dimen name="margin_48dp">48dp</dimen>
+  <dimen name="button_height">48dp</dimen>
+  <dimen name="button_padding">16dp</dimen>
+  <dimen name="primary_button_height">48dp</dimen>
+  <dimen name="fab_margin">16dp</dimen>
+  <dimen name="video_width">150dp</dimen>
+  <dimen name="video_height">150dp</dimen>
+
+  <!-- Different margins !-->
+  <dimen name="xx_small_margin">2dp</dimen>
+  <dimen name="x_small_margin">4dp</dimen>
+  <dimen name="small_margin">8dp</dimen>
+  <dimen name="medium_margin">16dp</dimen>
+  <dimen name="x_medium_margin">20dp</dimen>
+  <dimen name="large_margin">24dp</dimen>
+  <dimen name="xlarge_margin">32dp</dimen>
+  <dimen name="xmlarge_margin">48dp</dimen>
+  <dimen name="xx_large_margin">64dp</dimen>
+<dimen name="xxx_large_margin">128dp</dimen>
+  <!-- Difference padding !-->
+  <dimen name="small_padding">2dp</dimen>
+  <dimen name="medium_padding">4dp</dimen>
+  <dimen name="large_padding">8dp</dimen>
+
+  <!-- Views size !-->
+  <dimen name="small_view_width">32dp</dimen>
+  <dimen name="small_view_height">32dp</dimen>
+  <dimen name="s_medium_view_width">48dp</dimen>
+  <dimen name="s_medium_view_height">48dp</dimen>
+  <dimen name="medium_view_width">64dp</dimen>
+  <dimen name="medium_view_height">64dp</dimen>
+  <dimen name="large_view_width">128dp</dimen>
+  <dimen name="large_view_height">128dp</dimen>
+  <dimen name="x_large_view_height">256dp</dimen>
+
+  <!-- TO ADD CUSTOM SIZES !-->
+  <dimen name="movie_details_post_height">170dp</dimen>
+  <dimen name="movie_details_post_width">100dp</dimen>
+  <dimen name="tags_list_height">60dp</dimen>
+
+</resources>

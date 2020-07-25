@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_c">
+
+  <ImageView
+      android:id="@+id/reviews_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:alpha=".6"
+      android:contentDescription="@null"
+      android:background="@drawable/no_preview"
+      android:scaleType="fitXY"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/review_lists"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="64dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <TextView
+      android:id="@+id/review_count"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:fontFamily="@font/bowlby_one"
+      android:padding="@dimen/small_padding"
+
+      android:textColor="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <TextView
+      android:id="@+id/review_warning"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:drawableTop="@drawable/warning"
+      android:text="@string/no_review"
+      android:textAlignment="center"
+      android:fontFamily="@font/fredoka_one"
+      android:textColor="@color/black"
+      android:textSize="@dimen/large_txt_size"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <ImageView
+      android:id="@+id/review_next"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:background="@drawable/ripple_effect"
+      android:src="@drawable/next"
+      android:contentDescription="@null"
+      app:layout_constraintEnd_toEndOf="@+id/review_count"
+      app:layout_constraintTop_toBottomOf="@+id/review_count"/>
+
+  <ImageView
+      android:id="@+id/review_prev"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:background="@drawable/ripple_effect"
+      android:src="@drawable/previous"
+      android:contentDescription="@null"
+      app:layout_constraintBottom_toBottomOf="@+id/review_next"
+      app:layout_constraintStart_toStartOf="@+id/review_count"
+      app:layout_constraintTop_toTopOf="@+id/review_next"/>
+
+  <TextView
+      android:id="@+id/review_current_total_preview"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/fredoka_one"
+      android:padding="@dimen/small_padding"
+      android:textColor="@color/white"
+      app:layout_constraintBottom_toBottomOf="@+id/review_next"
+      app:layout_constraintEnd_toStartOf="@+id/review_next"
+      app:layout_constraintStart_toEndOf="@+id/review_prev"
+      app:layout_constraintTop_toTopOf="@+id/review_next"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

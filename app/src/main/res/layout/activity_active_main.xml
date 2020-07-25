@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/night_mode"/>
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_centerHorizontal="true"
+            android:text="Category"
+            android:textSize="50dp" />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rarrow"
+            android:layout_marginStart="15dp"
+            android:onClick="previous"
+            android:layout_marginTop="260dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/larrow"
+            android:layout_alignParentEnd="true"
+            android:onClick="next"
+            android:layout_marginTop="260dp" />
+
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/home"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_centerHorizontal="true">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="35dp">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/filmImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/black"
+                        android:contentDescription="movie"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/the_internship" />
+
+                    <TextView
+                        android:id="@+id/filmName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:text="@string/theinternship"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/Category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:text="@string/comedy"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="35dp">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/filmImg1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/black"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/the_family_stone"
+                        android:contentDescription="@string/movie" />
+
+                    <TextView
+                        android:id="@+id/filmName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="the family stone"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/Category1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:text="real life"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="35dp">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/filmImg2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:background="@android:color/black"
+                        android:src="@drawable/free_guy"
+                        android:contentDescription="@string/movie" />
+
+                    <TextView
+                        android:id="@+id/filmName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="free guy"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/Category2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:text="Sc-fi"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </ViewFlipper>
+
+        <Button
+            android:id="@+id/btnMovie"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/viewFlipper"
+            android:background="@drawable/btn"
+            android:text="@string/movie"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/btnMovie"
+            android:src="@drawable/rarrow"
+            android:id="@+id/right"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnMovie"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/larrow"
+            android:id="@+id/left"/>
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/btnMovie"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:id="@+id/view_flipper">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="35dp">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/s1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/the_monster_tour"
+                        android:textSize="16sp"
+                        android:background="@android:color/black"
+                        android:onClick="playSound"
+                        android:text="the monster tour"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:id="@+id/musicianName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:text="Eminem x Rihanna"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/musicName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:text="the monster tour"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/musicCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:text="rab"
+                        android:layout_gravity="center"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/btnM0"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="35dp"
+                        android:background="@drawable/play"
+                        android:layout_gravity="center" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="35dp">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/s2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/senorita"
+                        android:textSize="16sp"
+                        android:onClick="playSound"
+                        android:background="@android:color/black"
+                        android:scaleType="fitCenter"
+                        android:text="@string/senorita" />
+
+                    <TextView
+                        android:id="@+id/musicianName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:text="camila cabello"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/musicName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/senorita"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/musicCategory1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:text="romance"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+
+                    <Button
+                        android:id="@+id/btnM1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/play"
+                        android:layout_gravity="center" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="35dp">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/s3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:background="@android:color/black"
+                        android:src="@drawable/shape_of_you"
+                        android:onClick="playSound"
+                        android:text="shape of you" />
+
+                    <TextView
+                        android:id="@+id/musicianName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:text="Ed Sheeran"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/musicName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Shape of You"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/musicCategory2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:text="Simple"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/btnM2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="18dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/play"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </ViewFlipper>
+
+        <Button
+            android:id="@+id/btnMusic"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/view_flipper"
+            android:textSize="16sp"
+            android:background="@drawable/btn"
+            android:text="@string/music"
+            android:textColor="@color/btn_back_otp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/btnMusic"
+            android:src="@drawable/rarrow"
+            android:onClick="previousView"
+            android:id="@+id/right1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="15dp"
+            android:layout_below="@+id/btnMusic"
+            android:layout_alignParentEnd="true"
+            android:onClick="nextView"
+            android:src="@drawable/larrow"
+            android:id="@+id/left1"/>
+
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/btnMusic"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:id="@+id/view_flipper1">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="35dp">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/b1"
+                        android:background="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ka"
+
+                        android:textSize="16sp"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:id="@+id/bookName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Pride and Prejudice"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:text="Jane Austen"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/bookCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:text="Romance"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="35dp">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/b2"
+                        android:background="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cm"
+                        android:textSize="16sp"
+                        android:scaleType="fitCenter" />
+                    <TextView
+                        android:id="@+id/bookName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="War and peace"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/Author1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:text="Leo Tolstoy"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/bookCategory1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:text="Russian literature"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="35dp">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/b3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:background="@android:color/black"
+                        android:src="@drawable/bl"/>
+
+                    <TextView
+                        android:id="@+id/bookName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Great dialog of Plato"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Author2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:text="Plato"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/bookCategory2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:text="Philosophy"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </ViewFlipper>
+
+        <Button
+            android:id="@+id/Book"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/view_flipper1"
+            android:textSize="16sp"
+            android:background="@drawable/btn"
+            android:text="@string/book"
+            android:textColor="@color/btn_back_otp"
+            android:layout_marginBottom="60dp"/>
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Book"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Profile"
+            android:textSize="20dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

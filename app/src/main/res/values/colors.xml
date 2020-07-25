@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#3F51B5</color>
+  <color name="colorPrimaryDark">@color/btn_otp</color>
+  <color name="colorAccent">#FF4081</color>
+
+  <color name="white">#FFFFFF</color>
+  <color name="black">#000000</color>
+  <color name="orange_a">#3F51B5</color>
+  <color name="orange_b">#647B87</color>
+  <color name="orange_c">#020A1B</color>
+  <color name="grey_c">#24BBB6</color>
+  <color name="purple">#FFFFFF</color>
+  <color name="purple_b">#FF0090</color>
+  <color name="blue_a">#5940AE</color>
+
+
+  <color name="colorPrimaryNight">#3A3939</color>
+  <color name="colorPrimaryDarkNight">#030303</color>
+  <color name="colorAccentNight">#FFEB3B</color>
+
+  <color name="PrimaryTitleColor">#FFFFFF</color>
+  <color name="PrimaryTitleColorNight">#465A5A</color>
+  <color name="btn_back_otp">#FFFFFF</color>
+  <color name="btn_otp">@android:color/tertiary_text_light</color>
+  <color name="text">#F7ECEC</color>
+  <color name="MovieTextTitleColor">#FFFFFF</color>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+  <ImageView
+      android:id="@+id/item_backdrop"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:alpha=".3"
+      android:contentDescription="@null"
+      android:scaleType="fitXY"
+      android:src="@drawable/no_preview"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <ImageView
+      android:id="@+id/item_poster"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:contentDescription="@null"
+      android:src="@drawable/no_preview"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <TextView
+      android:id="@+id/item_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/xx_large_margin"
+      android:fontFamily="@font/fredoka_one"
+      android:textAlignment="center"
+      android:textColor="@color/orange_a"
+      android:textSize="@dimen/medium_txt_size"
+      app:layout_constraintEnd_toEndOf="@+id/item_poster"
+      app:layout_constraintStart_toStartOf="@+id/item_poster"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <TextView
+      android:id="@+id/item_rating"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="@dimen/small_margin"
+      android:layout_marginTop="@dimen/xlarge_margin"
+      android:drawableStart="@drawable/rating_icon"
+      android:textColor="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <TextView
+      android:id="@+id/item_overview"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/medium_margin"
+      android:fontFamily="@font/benchnine_light"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textSize="@dimen/small_txt_size"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/item_poster"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

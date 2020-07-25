@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_a">
+
+
+  <ImageView
+      android:id="@+id/recommend_back"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:alpha=".6"
+      android:scaleType="fitXY"
+      android:src="@drawable/no_preview"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"/>
+
+  <LinearLayout
+      android:id="@+id/recommend_container"
+      android:layout_width="wrap_content"
+      android:layout_height="35dp"
+      android:layout_marginTop="@dimen/small_margin"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/recommend_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_effect"
+        android:contentDescription="@null"
+        android:src="@drawable/prev_white"/>
+
+    <TextView
+        android:id="@+id/recommend_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fredoka_one"
+        android:padding="@dimen/small_padding"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_txt_size"/>
+
+    <ImageView
+        android:id="@+id/recommend_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_effect"
+        android:contentDescription="@null"
+        android:src="@drawable/next_white"/>
+  </LinearLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recommend_list"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_marginTop="4dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/recommend_container"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

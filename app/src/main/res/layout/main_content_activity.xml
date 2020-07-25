@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+
+  <ScrollView
+      android:id="@+id/main_data_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="visible"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+      <include
+          layout="@layout/single_section"
+          android:id="@+id/upcoming_section"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+      <include
+          layout="@layout/single_section"
+          android:id="@+id/playing_section"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/x_small_margin"/>
+
+      <include
+          layout="@layout/single_section"
+          android:id="@+id/popular_section"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/x_small_margin"/>
+
+      <include
+          layout="@layout/single_section"
+          android:id="@+id/rated_section"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/x_small_margin"/>
+
+      <include
+          layout="@layout/single_section"
+          android:id="@+id/hollywood_section"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/x_small_margin"/>
+
+      <include
+          layout="@layout/single_section"
+          android:id="@+id/favorite_section"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/x_small_margin"/>
+
+    </LinearLayout>
+  </ScrollView>
+  <com.pnikosis.materialishprogress.ProgressWheel
+      android:id="@+id/wheel"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_gravity="center"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:matProg_barColor="@color/white"
+      app:matProg_barWidth="4dp"
+      app:matProg_progressIndeterminate="true"/>
+
+
+  <TextView
+      android:id="@+id/no_connection_txt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/xxx_large_margin"
+      android:drawableTop="@drawable/warning"
+      android:fontFamily="@font/fredoka_one"
+      android:text="@string/noconnection"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textSize="@dimen/medium_txt_size"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <Button
+      android:id="@+id/retry_btn"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="24dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="24dp"
+      android:background="@drawable/button_ripple"
+      android:fontFamily="@font/fredoka_one"
+      android:text="@string/retry"
+      android:textColor="@color/white"
+      android:visibility="gone"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/no_connection_txt"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
