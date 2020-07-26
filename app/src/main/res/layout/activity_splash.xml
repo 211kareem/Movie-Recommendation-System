@@ -9,9 +9,24 @@
     android:layout_height="match_parent"
     android:id="@+id/bre"
     android:gravity="center"
-    android:background="@android:color/darker_gray"
+    android:background="#81A7BA"
     android:orientation="vertical"
     tools:context=".movie.ui.screens.SplashScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="95dp"
+        android:text="Welcome"
+        android:textColor="#FF0000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to"
+        android:textSize="70dp"/>
+
+
 
 
     <TextView
@@ -19,16 +34,23 @@
         android:layout_height="wrap_content"
         android:text="BREAK"
         android:textColor="#FF0000"
-        android:textSize="90dp" />
+        android:textSize="95dp" />
 
     <ImageView
         android:id="@+id/logo1"
-        android:layout_marginTop="80dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="30sp"
         android:adjustViewBounds="true"
-        android:src="@drawable/flow"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"
+        android:src="@drawable/flow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aguafina_script"
+        android:text="Recommendation"
+        android:textSize="30dp" />
 
 
 

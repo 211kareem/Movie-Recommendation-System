@@ -1,6 +1,7 @@
 package com.example.abreak.signed;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -254,6 +255,10 @@ public class SignUpActivity extends AppCompatActivity {
         if(account !=  null){
             String personName = account.getDisplayName();
             String personEmail = account.getEmail();
+            String personGivenName = account.getGivenName();
+            String personFamilyName = account.getFamilyName();
+            String personId = account.getId();
+            Uri personPhoto = account.getPhotoUrl();
 
 
             Toast.makeText(SignUpActivity.this,personName +"\n"+ personEmail ,Toast.LENGTH_SHORT).show();
