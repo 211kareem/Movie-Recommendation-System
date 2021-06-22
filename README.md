@@ -13,3 +13,5 @@ App to recommend different things in different categories for different types of
 ![Screenshot_20210618-030039_Break](https://user-images.githubusercontent.com/48871160/122844303-b0d35500-d301-11eb-8e7e-b4f0b9993ec8.jpg)
 ![Screenshot_20210618-030048_Break](https://user-images.githubusercontent.com/48871160/122844307-b2048200-d301-11eb-98db-8a082e6da214.jpg)
 ![Screenshot_20210618-030052_Break](https://user-images.githubusercontent.com/48871160/122844309-b3ce4580-d301-11eb-8b95-30845322e82a.jpg)
+
+It is a simple recommendation system called 'BREAK' that should make decision-making much easier for all users which saves them a lot of time and makes them act instead of doing nothing because they can't decide what they want to do; By recommending them a new movie to watch📺, a book to read📚, music to listen to♪♬, etc...
